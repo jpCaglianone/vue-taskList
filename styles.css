@@ -1,0 +1,46 @@
+:root {
+  --cor-prim: #ff8614;
+  --cor-sec:
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+#logo {
+  height:200px;
+  margin-top: 50px;
+}
+form {
+  margin-top: 50px;
+}
+button {
+  margin-left: 1%;
+  border-radius:20px;
+  font-weight: bold;
+  font-size: 15px;
+  border: 2px solid var(--cor-prim);
+  color:white;
+  background:var(--cor-prim);
+  transition: all 0.2s;
+}
+button:hover {
+  box-shadow: 1px 1px 15px var(--cor-prim);
+  color:white;
+  cursor:pointer;
+  transition: all 0.2s;
+}
+button:active{
+  box-shadow: 1px 1px 10px var(--cor-prim);
+  transform:scale(0.85);
+  cursor:pointer;
+  transition: all 0.2s;
+}
+label {
+  font-family: "Monotype Corsiva";
+  font-size: 20px;
+}
+input {
+  box-shadow: 2px 2px 5px black;
+  border-radius: 5px;
+}

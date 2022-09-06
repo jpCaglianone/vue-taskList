@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    
+  </head>
+  
+  <body>
+    <main id="aplication">
+     <center>
+    <img id="logo" src="https://www.seekpng.com/png/full/407-4071094_leao-logo-png-leao-laranja.png" alt='logo'/>
+     
+    <form>
+     <label>Insert a task: </label>
+      <input type='text' v-model="input" />
+      <button @click.prevent="insert">+</button>
+      <button @click.prevent="clearAll">Clear all</button>
+    </form>
+    
+      <p v-for="task in tasks">{{tasks.indexOf(task)+1}}.{{task}}</p> 
+     
+    </center>
+
+</main>
+    
+</body>
+  
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.18/vue.min.js"></script>
+    <script src="main.js"></script>
+  
+</html>
