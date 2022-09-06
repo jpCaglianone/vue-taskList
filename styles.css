@@ -1,6 +1,6 @@
 :root {
   --cor-prim: #ff8614;
-  --cor-sec:
+  --cor-sec: #2C039C;
 }
 
 html, body {
@@ -20,13 +20,13 @@ button {
   font-weight: bold;
   font-size: 15px;
   border: 2px solid var(--cor-prim);
-  color:white;
+  color:var(--cor-sec);
   background:var(--cor-prim);
   transition: all 0.2s;
 }
 button:hover {
   box-shadow: 1px 1px 15px var(--cor-prim);
-  color:white;
+  color:var(--cor-sec);
   cursor:pointer;
   transition: all 0.2s;
 }
@@ -43,4 +43,8 @@ label {
 input {
   box-shadow: 2px 2px 5px black;
   border-radius: 5px;
+}
+label{
+  font-weight:bold;
+  color:var(--cor-sec);
 }
